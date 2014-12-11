@@ -3,8 +3,16 @@
 	<classpathentry excluding="com/jogamp/opencl/demos/joglinterop/" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="jogamp/gluegen-rt.jar"/>
-	<classpathentry kind="lib" path="jogamp/jocl.jar"/>
-	<classpathentry kind="lib" path="jogamp/jogl-all.jar"/>
+	<classpathentry kind="lib" path="jogamp/jocl.jar" sourcepath="jogamp/src/jocl">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/FFTImageEditor/jogamp/jocl-javadoc.zip!/jocl/javadoc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="jogamp/jogl-all.jar" sourcepath="jogamp/src/jogl">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/FFTImageEditor/jogamp/jogl-javadoc.zip!/jogl/javadoc"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="jogamp/gluegen-rt-natives-windows-amd64.jar"/>
 	<classpathentry kind="lib" path="jogamp/jocl-natives-windows-amd64.jar"/>
 	<classpathentry kind="lib" path="jogamp/jogl-all-natives-windows-amd64.jar"/>
